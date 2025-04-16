@@ -1,0 +1,48 @@
+<!-- Header Modal -->
+<header class="navbar bg-light py-2">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-2">
+          <i data-lucide="utensils" class="me-2 text-primary"></i>
+          <span class="fs-4 fw-bold">Recipe<span class="text-primary">Remix</span></span>
+          </a>
+        </div>
+        <div id="authButtons">
+          <button
+            class="btn btn-outline-secondary me-2"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            Log In
+          </button>
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#signupModal"
+          >
+            Sign Up
+          </button>
+        </div>
+        <div id="userInfo" style="display: none">
+          <a href="/dashboard" class="btn btn-outline-secondary me-2">
+            <i
+              data-lucide="layout-dashboard"
+              class="me-1"
+              style="width: 18px; height: 18px"
+            ></i>
+            Dashboard
+          </a>
+          <a href="/profile" class="btn btn-outline-primary me-2">
+            <i
+              data-lucide="user"
+              class="me-1"
+              style="width: 18px; height: 18px"
+            ></i>
+            Profile
+          </a>
+          <span id="displayUsername" class="me-2 fw-bold"></span>
+          <button id="logoutBtn" class="btn btn-outline-secondary">
+            Logout
+          </button>
+        </div>
+      </div>
+    </header>
